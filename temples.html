@@ -1,0 +1,79 @@
+<!--Temples-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   <section class="sub-header">
+    <nav>
+        <a href="temples.html">
+            <img src="images/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="reminders.html">Reminders</a></li>
+                    <li><a href="gallery.html">Photo Gallary</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>TEMPLES 🛕</h1>
+   </section>
+   
+<!----JavaScript for Toggle Menu---->
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
+
+
+   <!--code-->
+   <div id="card-area">
+    <div class="wrapper">
+        <div class="box-area">
+            <div class="box">
+                <img alt="" src="images/1.jpg">
+                <div class="overlay">
+                    <h3>Kanipakam,Andhra Pradesh</h3>
+                    <p>Sacred Serenity,Kanipakam Bliss.</p><a href="Kanipakam.html">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img alt="" src="images/2.jpg">
+                <div class="overlay">
+                    <h3>Tiruvannamalai,Tamil Nadu</h3>
+                    <p>Spiritual Arunachalam, Divine Vibes.</p><a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img alt="" src="images/6.jpg">
+                <div class="overlay">
+                    <h3>Kolhapur,Maharashtra</h3>
+                    <p>Cultural Gem, Kolhapur Legacy.</p><a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html>

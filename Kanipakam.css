@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bgm.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    transition: background 1s;
+}
+nav img{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size:10px;
+    font-weight:600;
+    color: #fff;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+  
+}
+.nav-links ul li{
+    padding: 8px 12px;
+    position: relative;
+    display: inline-block;
+    list-style:none;
+   
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+  
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+   
+}
+nav:hover{
+    background: #cabebe;
+   
+}
+nav:hover .logo{
+    color: #333;
+
+}
+nav:hover ul li a{
+    color: #333;
+
+}
+.content{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 120px;
+    font-weight: 700;
+}
+.content p{
+    margin: 10px 0 40px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #87e211;
+    opacity: 0;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+.links a{
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.container{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.slide-left{
+    animation-delay:1s;
+}
+.links.slide-left{
+    animation-delay:2s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .content h1{
+        font-size: 100px;
+        font-weight: 600;
+    }
+    .content p{
+        margin: 10px 0 40px;
+        font-size: 30px;
+        font-weight: 300;
+        color: #87e211;
+        opacity: 0;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+   
+}
+
+.sub-header{
+    height:150vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/k1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+.sub-header h1{
+    margin-top: 700px;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+body{
+	background:#fff;
+    color: #131212;
+}
+
+
+
+.kani{
+    text-align: center;
+    width:40%;
+    margin:40px;
+    padding:20px 0;
+}
+.row{
+    text-align:justify;
+    position: absolute;
+}
+.row h1{
+    text-align: center;
+}
+.row img.a{
+    vertical-align: text-top;
+
+}
+.row p{
+    color: #080707;
+    padding:0;
+    
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #5bf339;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .previous{
+    margin:0;
+    position: absolute;
+    
+    left: 46%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+  .next{
+        margin:0;
+        position: absolute;
+        
+        left:55%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+  }
+
+
+  
+  
+  

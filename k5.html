@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kanipakam</title>
+        <link rel="stylesheet" href="k5.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <br>
+      <br>
+      <label class="toggle" arial-label="Toggle dark mode">
+        <input type="checkbox">
+        <span>☀️</span>
+        <span>🌙</span>
+      </label>
+      <script>
+      document.querySelector(".toggle input").addEventListener("change", (evt) => {
+        document.documentElement.dataset.mode = evt.currentTarget.checked ? "dark" : "light";
+      });
+    </script>
+        <div class="map">
+            <h2>KANIPAKAM LOCATION</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.1768681939166!2d79.03138530974327!3d13.276885308059505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad5fc389bcd3b9%3A0x280c79e75c172f55!2sSri%20Swayambhu%20Varasidhi%20Vinayaka%20Swamy%20Devastanam%2C%20Kanipakam!5e0!3m2!1sen!2sin!4v1709174776003!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br><br><br>
+        <div class="contact-container">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <input type="hidden" name="access_key" value="f7a7a68f-99e8-4c59-abb1-fcfacce9ab49">
+
+            <div class="content-left-title">
+              <h2>Get in Touch</h2>
+              <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required> 
+            <input type="email" name="name" placeholder="Your Email" class="contact-inputs" required> 
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <i class="fa fa-arrow-right"></i></button>
+          </form>
+          <div class="contact-right">
+            <img src="images/s.jpg" alt="">
+          </div>
+        </div>
+       
+       
+          <br><br><br><br>
+          <a href="k4.html" class="previous">&laquo; Previous</a>
+          <br><br><br>
+    </body>
+</html>
